@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Grouping header and footer since they share the exact same style */
+header,
+footer {
+    background-color: #444;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Grouping h2 and p inside sections for spacing, plus the gray box */
+section {
+    background-color: #e9e9e9;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+section h2 {
+    border-bottom: 1px solid #777;
+    margin-top: 0;
+}
+
+/* Image shadow */
+img {
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Removes default margins from paragraphs so they fit nicely in the boxes */
+p {
+    margin: 5px 0;
+}
