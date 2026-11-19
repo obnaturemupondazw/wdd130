@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* W04: Added Flexbox to make nav horizontal and evenly spaced */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    /* Removes underlines */
+}
+
+/* W04: Added max-width to header, .grid, and footer */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: black;
+    border-bottom: 2px solid #333;
+    /* W04: Added bottom border */
+    padding-bottom: 10px;
+}
+
+/* W04: The Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Aside on left, Main on right */
+    align-items: start;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 5px gray;
+    float: right;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-row: 1;
+    /* W04: Ensures aside stays in the first row */
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+}

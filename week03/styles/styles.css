@@ -4,23 +4,44 @@
     box-sizing: border-box;
 }
 
+/* W04: Added Flexbox to make nav horizontal and evenly spaced */
 nav {
     background-color: #333;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
-    padding: 5px;
+    padding: 10px;
     display: block;
+    text-decoration: none;
+    /* Removes underlines */
 }
 
-main {
+/* W04: Added max-width to header, .grid, and footer */
+header,
+.grid,
+footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 h1 {
     color: black;
+    border-bottom: 2px solid #333;
+    /* W04: Added bottom border */
+    padding-bottom: 10px;
+}
+
+/* W04: The Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Aside on left, Main on right */
+    align-items: start;
 }
 
 main img {
@@ -36,6 +57,8 @@ main img {
 aside {
     width: 20rem;
     position: relative;
+    grid-row: 1;
+    /* W04: Ensures aside stays in the first row */
 }
 
 aside img {
