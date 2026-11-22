@@ -73,7 +73,6 @@ nav a {
     padding: 15px;
     text-align: center;
     background-color: #264653cc;
-    /* Changed from rgba */
     color: #ffffff;
 }
 
@@ -83,7 +82,6 @@ nav a {
     left: 20px;
     right: 20px;
     background-color: #ffffffe6;
-    /* Changed from rgba */
     padding: 15px;
 }
 
