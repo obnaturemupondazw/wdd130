@@ -50,10 +50,10 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #000000;
     padding: 5px 15px;
-    border: 1px solid black;
-    background-color: white;
+    border: 1px solid #000000;
+    background-color: #ffffff;
 }
 
 .hero {
@@ -67,7 +67,7 @@ nav a {
     padding: 15px;
     text-align: center;
     background-color: rgba(38, 70, 83, 0.8);
-    color: white;
+    color: #ffffff;
 }
 
 .hero article {
