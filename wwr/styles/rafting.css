@@ -1,1 +1,133 @@
-c
+:root {
+    --primary-color: #055a05;
+    --accent1-color: #264653;
+    --bg-color: #e6e0f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 15px 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #264653cc;
+    /* Changed from rgba */
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #ffffffe6;
+    /* Changed from rgba */
+    padding: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-grid figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+}
+
+.adventure-grid figcaption {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--bg-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
